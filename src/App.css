@@ -1,0 +1,376 @@
+/* 1. FONTES CINEMÁTICAS MODERNAS (Estilo Netflix/Crunchyroll) */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@500;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  /* Fundo escuro profundo com um toque de vermelho (Estilo dark mode premium) */
+  background: #0f0202;
+  background-image: linear-gradient(to bottom, #1a0000 0%, #0f0202 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  color: #f2f2f2;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ========================= */
+/* HEADER - Minimalista e Funcional */
+/* ========================= */
+
+.header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  /* Efeito de vidro escuro (blur) sutil */
+  background: rgba(15, 2, 2, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 1000;
+  box-sizing: border-box;
+  transition: background 0.3s;
+}
+
+.logo-area h1 {
+  font-size: 32px; /* Tamanhos absurdos no logo não são usados hoje. Mais limpo é melhor. */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #e50914; /* Vermelho forte estilo streaming */
+}
+
+/* SEARCH - Estilo App Moderno */
+
+.search {
+  width: 380px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px; /* Cantos arredondados modernos, não ovais */
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  transition: 0.2s ease;
+}
+
+.search:focus-within {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(229, 9, 20, 0.5); /* Foco vermelho sutil */
+}
+
+.search input {
+  flex: 1;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.search input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.search span {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* PROFILE */
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px; /* Avatares levemente quadrados estilo Netflix/Discord */
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* HERO CAROUSEL - Cinemático */
+/* ========================= */
+
+.hero {
+  width: 100%;
+  height: 70vh; /* Altura responsiva baseada na tela */
+  min-height: 400px;
+  padding: 0; /* Ocupa 100% da largura como nos streamings */
+  margin-top: 70px;
+}
+
+.hero-swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 0; /* Imagem inteira, sem borda */
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+/* OVERLAY DE TEXTO DO HERO */
+
+.overlay {
+  position: absolute;
+  left: 40px;
+  bottom: 80px;
+  z-index: 10;
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, transparent 100%);
+  padding: 20px 40px 20px 0;
+  border-radius: 10px;
+}
+
+.overlay h2 {
+  font-size: 52px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.overlay p {
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  max-width: 600px;
+  color: #d1d1d1;
+  line-height: 1.5;
+}
+
+/* SWIPER */
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgba(255,255,255,0.5) !important;
+  transition: 0.2s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: white !important;
+  transform: scale(1.1);
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255,255,255,0.4) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #e50914 !important;
+}
+
+/* ========================= */
+/* TITLE DA SEÇÃO */
+/* ========================= */
+
+.title-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* Alinhado à esquerda como Letterboxd */
+  padding: 0 40px;
+  margin-top: 50px;
+}
+
+.title-section h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #e5e5e5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ========================= */
+/* GAMES - Grid Harmoniosa */
+/* ========================= */
+
+.games-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+/* CARD DO JOGO */
+
+.game-card {
+  width: 100%;
+  cursor: pointer;
+}
+
+.game-card img {
+  width: 100%;
+  aspect-ratio: 2/3; /* Proporção exata de poster de filme/jogo */
+  object-fit: cover;
+  border-radius: 8px; /* Cantos arredondados suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.game-card img:hover {
+  transform: scale(1.05); /* Efeito Netflix de crescer ao passar o mouse */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.game-card h3 {
+  margin-top: 12px;
+  text-align: left;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #e5e5e5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Corta textos muito grandes com "..." */
+}
+
+/* STARS */
+
+.stars {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5px;
+  color: #e50914; /* Estrelas no tom vermelho do site */
+  font-size: 14px;
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+.footer {
+  width: 100%;
+  margin-top: 80px;
+  padding: 40px;
+  background: #0a0000;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+
+@media (max-width: 1100px) {
+  .header { padding: 0 20px; }
+  .search { width: 280px; }
+  nav a { font-size: 14px; }
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .header {
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+  .search {
+    width: 100%;
+    max-width: 100%;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .hero {
+    height: 50vh;
+    min-height: 300px;
+    margin-top: 120px; /* Ajuste pelo header maior */
+  }
+  .overlay {
+    left: 20px;
+    bottom: 30px;
+    padding: 0;
+    background: transparent;
+  }
+  .overlay h2 { font-size: 32px; }
+  .overlay p { font-size: 14px; }
+  .title-section h2 { font-size: 20px; }
+}
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+  .logo-area h1 { font-size: 24px; }
+  nav { gap: 15px; }
+  nav a { font-size: 13px; }
+  .search { height: 38px; }
+  .profile { width: 35px; height: 35px; }
+  .hero { height: 40vh; margin-top: 140px; }
+  .overlay h2 { font-size: 24px; }
+  .overlay p { display: none; /* Esconde a descrição no mobile pra ficar limpo */ }
+  .title-section { padding: 0 20px; }
+  .games-row {
+    padding: 0 20px;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); /* Mostra mais jogos por linha no celular */
+    gap: 15px;
+  }
+}
