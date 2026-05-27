@@ -6,7 +6,6 @@ export default function Games() {
   const [rating, setRating] = useState(0);
   const [review, setReview] = useState("");
   
-  // Estado para armazenar o texto da busca
   const [search, setSearch] = useState("");
 
   const games = [
@@ -27,7 +26,7 @@ export default function Games() {
     { id: 15, name: "Hades", image: "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg" },
   ];
 
-  // Filtra os jogos conforme o usuário digita no Header
+ 
   const filteredGames = games.filter((game) =>
     game.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -59,7 +58,7 @@ export default function Games() {
 
   return (
     <>
-      {/* Passamos a função setSearch para a prop onSearch do Header */}
+    
       <Header onSearch={setSearch} />
 
       <div
