@@ -9,7 +9,7 @@ const INITIAL_PROFILE = {
   avatar: "",
   background: "",
 };
-
+/*Estados*/
 export default function Profile() {
   const [profile, setProfile] = useState(INITIAL_PROFILE);
   const [reviews, setReviews] = useState([]);
