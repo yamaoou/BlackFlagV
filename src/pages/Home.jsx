@@ -66,7 +66,7 @@ export default function Home() {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1708091/capsule_616x353.jpg?t=1763578010"
+                src="https://store-images.s-microsoft.com/image/apps.47030.14330850369313893.a687698c-b891-44f6-9576-fe28978ce915.ce613c75-aac4-4721-9941-6a254d061488?q=90&w=480&h=270"
                 alt="Masterchief"
               />
 
