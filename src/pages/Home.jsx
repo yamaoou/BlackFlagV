@@ -21,7 +21,7 @@ const games = [
   {
     title: "Crimson Desert",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA4lHl2l1dl4GzYDx2tV467QWx8ArSDb-AIQ&s",
+      "https://store-images.s-microsoft.com/image/apps.45738.13616283370123336.55bc585b-1fc2-4652-8965-61111d6975e0.5236f2e9-a0f4-4fc1-8aba-dbf96b812b95",
     rating: 5,
   },
   {
