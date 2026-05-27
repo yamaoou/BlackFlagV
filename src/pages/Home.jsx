@@ -66,15 +66,15 @@ export default function Home() {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="https://windowsclub.com.br/wp-content/uploads/2026/05/FORZA-HORIZON-6.jpg"
-                alt="Forza Horizon 6"
+                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/26950369fe4b03c2268620eb9815c8a246aa0b06/ss_26950369fe4b03c2268620eb9815c8a246aa0b06.1920x1080.jpg"
+                alt="Hollow Knight: Silksong"
               />
 
               <div className="overlay">
-                <h2>Forza Horizon 6</h2>
+                <h2>Hollow Knight: Silksong</h2>
 
                 <p>
-                    Jogadores se surpreendem com a beleza do Forza Horizon 6 
+                    O indie mais aguardado da geração.
                 </p>
 
                 <Link
@@ -90,17 +90,17 @@ export default function Home() {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/26950369fe4b03c2268620eb9815c8a246aa0b06/ss_26950369fe4b03c2268620eb9815c8a246aa0b06.1920x1080.jpg"
-                alt="Hollow Knight"
+                src="https://windowsclub.com.br/wp-content/uploads/2026/05/FORZA-HORIZON-6.jpg"
+                alt="Forza Horizon 6"
               />
 
               <div className="overlay">
                 <h2>
-                  Hollow Knight: Silksong
+                  Forza Horizon 6
                 </h2>
 
                 <p>
-                  O indie mais aguardado da geração.
+                  Jogadores se surpreendem com a beleza do Forza Horizon 6
                 </p>
 
                 <Link
