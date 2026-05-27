@@ -14,7 +14,7 @@ export default function Profile() {
   const [profile, setProfile] = useState(INITIAL_PROFILE);
   const [reviews, setReviews] = useState([]);
   const [loaded, setLoaded] = useState(false);
-  const [isEditing, setIsEditing] = useState(false); // Novo estado para controlar o modo edição
+  const [isEditing, setIsEditing] = useState(false); 
 
   useEffect(() => {
     const savedProfile = localStorage.getItem("profile");
@@ -33,7 +33,7 @@ export default function Profile() {
     }
   }, [profile, loaded]);
 
-  // Função genérica para atualizar campos de texto
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setProfile(prev => ({ ...prev, [name]: value }));
@@ -78,7 +78,7 @@ export default function Profile() {
         <div className="profile-banner">
           <div className="banner-overlay">
             
-            {/* AVATAR */}
+            
             <div className="avatar-section">
               {profile.avatar ? (
                 <img src={profile.avatar} className="avatar" alt="Avatar" />
@@ -92,7 +92,7 @@ export default function Profile() {
               </label>
             </div>
 
-            {/* INFO (EDITÁVEL) */}
+            
             <div className="info">
               {isEditing ? (
                 <div className="edit-form">
@@ -134,7 +134,7 @@ export default function Profile() {
               )}
             </div>
 
-            {/* BOTÕES DE AÇÃO */}
+            
             <div className="profile-actions">
               <button 
                 className="edit-toggle-btn" 
@@ -203,7 +203,7 @@ const css = `
   flex-wrap: wrap;
 }
 
-/* FORMULÁRIO DE EDIÇÃO */
+
 .edit-form {
   display: flex;
   flex-direction: column;
