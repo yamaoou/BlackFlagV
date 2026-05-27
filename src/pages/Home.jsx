@@ -66,7 +66,7 @@ export default function Home() {
           <SwiperSlide>
             <div className="slide">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZxVxc9lHK9bNnLfwJsxXrqswfLhXRWpcrug&s"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3FzkxaSpIONjbvK_DEisBr0FQHz3n_Z11xQ&s"
                 alt="Forza Horizon 6"
               />
 
